@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iskandar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</head>
+<body class="mt-5">
+<!--navbar section-->    
+<div class="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/home">Iskandar Maulana</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/portofolio">Portfolio<span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact" tabindex="-1" aria-disabled="true">Contac Us</a>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Social Media
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" onclick=" window.open('https://www.instagram.com/iskandar_maulana','_blank')">Instagram</a>
+                  <a class="dropdown-item" onclick=" window.open('https://www.linkedin.com/in/iskandar-maulana-putera','_blank')">Linkedin</a>
+                  <!--<div class="dropdown-divider"></div>-->
+                </div>
+            </li>
+              
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=" window.open('http://google.com','_blank')">Search</button>
+          </form>
+  
+          <a class="btn ml-2 btn-primary" href="/route/logout" role="button">Logout</a>              
+        </div>
+       
+    </nav>
+  </div>
+  <!--end of navbar section-->
+
+
+
+<!--Contact US section-->
+<section id="contact" class="contact mb-4">
+    <div class="container">
+        <div class="row mt-3 mb-4 text-center">
+            <div class="col">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 text-center">
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Contact Us </h5>
+                      <p class="card-text">Anda dapat menghubungi saya melalui alamat atau contact dibawah ini. </p>
+                      <p class="card-text">Silahkan masukkan komentar pada kolom isian di samping.</p>
+                    </div>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item"><h5>LOCATION</h5></li>
+                    <li class="list-group-item">Komplek Tomang Residence</li>
+                    <li class="list-group-item">Kota Medan, Prov. Sumatera Utara</li>
+                    <li class="list-group-item">+62 811681989</li>
+                    </ul>
+            </div>
+            <div class="col-lg-6">
+                <form>
+                    <div class="form-group">
+                      <label for="nama">Name</label>
+                      <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telp">Phone Number</label>
+                        <input type="text" class="form-control" id="telp">
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Comments</label>
+                        <textarea name="pesan" class="form-control" id="pesan"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning">Send</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end off Contact US section-->
+
+<!--footer section-->
+<footer class="bg-dark text-white fixed-bottom mt-3">
+  <div class="container">
+      <div class="row text-center">
+          <div class="col">
+              <p>Copyright 2021.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+<!--end of footer section-->
+
+</body>
+</html>
